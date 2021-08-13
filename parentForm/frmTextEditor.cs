@@ -1,11 +1,12 @@
 ﻿/*
- * Author: Russell Waring
- * Date: July 30th
- * Revision: August 4th
- * Title: Lab 5: Text Editor
+ * Author:      Katherine Bellman, Russell Waring
+ * Date:        July 30, 2021
+ * Revision:    August 13, 2021
+ * Title:       Lab 6: Text Editor
+ * Sub-title:   Text Editor Form
  * Description:
- *          This lab demonstrates the use of FileStream and StreamWriter to save and open files in the presentation
- *          and function of a basic text editor.
+ *          This form works connects the frmMainParent to the Document class 
+ *          and functions as a basic text editor.
  */
 
 using System;
