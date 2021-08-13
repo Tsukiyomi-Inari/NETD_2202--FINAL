@@ -17,6 +17,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Lab6MDI
 {
@@ -27,24 +28,40 @@ namespace Lab6MDI
             InitializeComponent();
         }
         #region "EVENT HANDLERS"
+        private void frmMainParent_Load(object sender, EventArgs e)
+        {
+            saveFileDialog1.Filter = "Text Documents (*.txt)|*.txt";
+            openFileDialog1.Filter = "Text Documents (*.txt)|*.txt";
+        }
+
+        #region "Menu Events"
+        // Tabs for the menuStrip1:
+        #region "File Tab"
         private void menuFileNew_Click(object sender, EventArgs e)
         {
-
+            Document.TextFile.Text = string.Empty;
+            Document.TextFile.FileName = string.Empty;
+            frmTextEditor frm = frmTextEditor.Instance;
+            frm.MdiParent = this;
+            // when loading the list of troops, force the update form (it is a public method) before show/focus
+            frm.UpdateForm();
+            frm.Show();
+            frm.Focus();
         }
 
         private void menuFileOpen_Click(object sender, EventArgs e)
         {
-
+            OpenFile();
         }
 
         private void menuFileSave_Click(object sender, EventArgs e)
         {
-
+            SaveFile();
         }
 
         private void menuFileSaveAs_Click(object sender, EventArgs e)
         {
-
+            SaveAsFile();
         }
 
         private void menuFileClose_Click(object sender, EventArgs e)
@@ -54,9 +71,13 @@ namespace Lab6MDI
 
         private void menuFileExit_Click(object sender, EventArgs e)
         {
-            
+            if (MessageBox.Show("Are you sure you want to exit?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
-
+        #endregion
+        #region "Edit Tab"
         private void menuEditCut_Click(object sender, EventArgs e)
         {
 
@@ -76,7 +97,8 @@ namespace Lab6MDI
         {
 
         }
-
+        #endregion
+        #region "Window Tab"
         private void menuWindowCascade_Click(object sender, EventArgs e)
         {
             this.LayoutMdi(System.Windows.Forms.MdiLayout.Cascade);
@@ -91,6 +113,8 @@ namespace Lab6MDI
         {
             this.LayoutMdi(System.Windows.Forms.MdiLayout.TileVertical);
         }
+        #endregion
+        #region "Help Tab"
         /// <summary>
         /// Opens the frmAbout as a dialog window
         /// </summary>
@@ -98,12 +122,102 @@ namespace Lab6MDI
         /// <param name="e"></param>
         private void menuHelpAbout_Click(object sender, EventArgs e)
         {
-
+            frmAbout frm = new frmAbout();
+            frm.ShowDialog();
         }
         #endregion
+
+        #endregion
+
+        #endregion
+
         #region "CUSTOM METHODS"
+        private void SaveAsFile()
+        {
+            String fileName = string.Empty;
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                fileName = saveFileDialog1.FileName;
+                Document.TextFile.FileName = fileName;
+                // save the information
+                Document.FileWrite(Document.TextFile, Document.TextFile.FileName);
+                MessageBox.Show("Save was Complete", "Save Confirmation", MessageBoxButtons.OK);
+                frmTextEditor.Instance.UpdateForm();
+                //filename = Path.GetFileName(filename);
+            };
+        }
+
+        /// <summary>
+        /// Prompts for SaveAsFile if there is no FileName.
+        /// </summary>
+        private void SaveFile()
+        {
+            if (frmTextEditor.Instance.FileNameCurrent == string.Empty || frmTextEditor.Instance.FileNameCurrent == "Untitled - Text Editor")
+            {
+                SaveAsFile();
+            }
+            else // if the current file is not empty use the current filename in memory / global variable
+            {
+                string fileName = frmTextEditor.Instance.FileNameCurrent;
+                Document.FileWrite(Document.TextFile, fileName);
+                MessageBox.Show("Save was Complete", "Save Confirmation", MessageBoxButtons.OK);
+                frmTextEditor.Instance.SetChangeStatus(false);
+            }
+        }
+
+        #region Menu Options
+        /// <summary>
+        /// Calls for the LoadFile method from the document class.
+        /// </summary>
+        private void OpenFile()
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                // Load from a file, have to show dialog first
+                Document.LoadFile(openFileDialog1.FileName);
+                frmTextEditor frm = frmTextEditor.Instance;
+                frm.MdiParent = this;
+                // when loading the list of troops, force the update form (it is a public method) before show/focus
+                frm.UpdateForm();
+                frm.Show();
+                frm.Focus();
+                //Instance.FileNameCurrent.Text = Path.GetFileName(openFileDialog1.FileName);
+            }
+        }
+
+
+        /// <summary>
+        /// Adios!
+        /// </summary>
+        private void ExitApplication()
+        {
+            if (MessageBox.Show("Are you sure you want to exit?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+
+        private void LoadTextEditor()
+        {
+            frmTextEditor frm = frmTextEditor.Instance;
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Focus();
+        }
+        #endregion
+
+        public void DisposeAll()
+        {
+            foreach(Form frm in this.MdiChildren)
+            {
+                frm.Dispose();
+                return;
+            }
+        }
 
 
         #endregion
+
     }
 }
