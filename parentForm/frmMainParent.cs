@@ -138,6 +138,13 @@ namespace Lab6MDI
             frm.Show();
             frm.Focus();
         }
+        private void menuWindowFelineOverlords_Click(object sender, EventArgs e)
+        {
+            frmFelineOverlords frm = frmFelineOverlords.Instance;
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Focus();
+        }
         #endregion
         #region "Help Tab"
         /// <summary>
@@ -235,9 +242,6 @@ namespace Lab6MDI
 
         #endregion
 
-        private void felineToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }

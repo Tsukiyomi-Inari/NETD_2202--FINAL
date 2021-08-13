@@ -12,7 +12,7 @@ using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Ice_Class_Creation
+namespace Lab6MDI
 {
     public partial class frmFelineOverlords : Form
     {
@@ -20,7 +20,21 @@ namespace Ice_Class_Creation
         {
             InitializeComponent();
         }
-
+        #region Singleton Pattern
+        // Singleton Pattern
+        private static frmFelineOverlords felineOverlordsInstance;
+        public static frmFelineOverlords Instance
+        {
+            get
+            {
+                if (felineOverlordsInstance == null)
+                {
+                    felineOverlordsInstance = new frmFelineOverlords();
+                }
+                return felineOverlordsInstance;
+            }
+        }
+        #endregion
         #region GLOBAL VARIABLES
 
         List<Cat> FelineOverLords = new List<Cat>();
@@ -80,7 +94,7 @@ namespace Ice_Class_Creation
         {
             if (MessageBox.Show("Are you sure you want to exit?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                Application.Exit();
+                this.Close();
             }
         }
 
@@ -130,6 +144,10 @@ namespace Ice_Class_Creation
             }
         }
 
+        private void frmClosed(object sender, FormClosedEventArgs e)
+        {
+            felineOverlordsInstance = null;
+        }
         #endregion
     }
 }

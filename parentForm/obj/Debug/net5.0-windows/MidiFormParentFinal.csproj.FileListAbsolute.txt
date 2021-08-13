@@ -18,8 +18,6 @@ C:\Users\Kat\source\repos\NETD_2202--FINAL\parentForm\obj\Debug\net5.0-windows\M
 C:\Users\Kat\source\repos\NETD_2202--FINAL\parentForm\obj\Debug\net5.0-windows\ref\MidiFormParentFinal.dll
 C:\Users\Kat\source\repos\NETD_2202--FINAL\parentForm\obj\Debug\net5.0-windows\MidiFormParentFinal.pdb
 C:\Users\Kat\source\repos\NETD_2202--FINAL\parentForm\obj\Debug\net5.0-windows\MidiFormParentFinal.genruntimeconfig.cache
-C:\Users\Kat\source\repos\NETD_2202--FINAL\parentForm\obj\Debug\net5.0-windows\MidiFormParentFinal.frmAbout.resources
-C:\Users\Kat\source\repos\NETD_2202--FINAL\parentForm\obj\Debug\net5.0-windows\Lab6MDI.frmBasicTextEditor.resources
 C:\Users\Kat\source\repos\NETD_2202--FINAL\parentForm\bin\Debug\net5.0-windows\frmAbout.cs
 C:\NETD\Projects\NETD_2202--FINAL\parentForm\obj\Debug\net5.0-windows\MidiFormParentFinal.csproj.AssemblyReference.cache
 C:\NETD\Projects\NETD_2202--FINAL\parentForm\obj\Debug\net5.0-windows\Lab6MDI.frmAbout.resources
@@ -45,3 +43,7 @@ C:\NETD\Projects\NETD_2202--FINAL\parentForm\bin\Debug\net5.0-windows\ref\MidiFo
 C:\NETD\Projects\NETD_2202--FINAL\parentForm\bin\Debug\net5.0-windows\MidiFormParentFinal.pdb
 C:\NETD\Projects\NETD_2202--FINAL\parentForm\obj\Debug\net5.0-windows\MidiFormParentFinal.genruntimeconfig.cache
 C:\NETD\Projects\NETD_2202--FINAL\parentForm\obj\Debug\net5.0-windows\Lab6MDI.frmContactTracer.resources
+C:\Users\Kat\source\repos\NETD_2202--FINAL\parentForm\obj\Debug\net5.0-windows\Lab6MDI.frmFelineOverlords.resources
+C:\Users\Kat\source\repos\NETD_2202--FINAL\parentForm\obj\Debug\net5.0-windows\Lab6MDI.frmAbout.resources
+C:\Users\Kat\source\repos\NETD_2202--FINAL\parentForm\obj\Debug\net5.0-windows\Lab6MDI.frmContactTracer.resources
+C:\Users\Kat\source\repos\NETD_2202--FINAL\parentForm\obj\Debug\net5.0-windows\Lab6MDI.frmTextEditor.resources

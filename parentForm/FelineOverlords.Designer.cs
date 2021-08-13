@@ -1,5 +1,5 @@
 ﻿
-namespace Ice_Class_Creation
+namespace Lab6MDI
 {
     partial class frmFelineOverlords
     {

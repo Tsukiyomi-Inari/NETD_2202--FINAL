@@ -9,7 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 
-namespace Ice_Class_Creation
+namespace Lab6MDI
 {
     
 	public class Cat
