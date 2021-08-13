@@ -243,5 +243,10 @@ namespace Lab6MDI
 
 
         #endregion
+
+        private void felineToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
