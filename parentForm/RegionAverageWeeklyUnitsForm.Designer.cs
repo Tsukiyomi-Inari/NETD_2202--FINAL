@@ -207,7 +207,7 @@ namespace Lab6MDI
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(140, 33);
             this.buttonExit.TabIndex = 16;
-            this.buttonExit.Text = "E&xit";
+            this.buttonExit.Text = "C&lose";
             this.regionAverageToolTip.SetToolTip(this.buttonExit, "Exits application.");
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.ExitClick);

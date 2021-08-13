@@ -81,22 +81,22 @@ namespace Lab6MDI
         #region "Edit Tab"
         private void menuEditCut_Click(object sender, EventArgs e)
         {
-
+            frmTextEditor.Instance.CutText();
         }
 
         private void menuEditCopy_Click(object sender, EventArgs e)
         {
-
+            frmTextEditor.Instance.CopyText();
         }
 
         private void menuEditPaste_Click(object sender, EventArgs e)
         {
-
+            frmTextEditor.Instance.PasteText();
         }
 
         private void menuEditSelectAll_Click(object sender, EventArgs e)
         {
-
+            frmTextEditor.Instance.SelectAllText();
         }
         #endregion
         #region "Window Tab"
@@ -210,7 +210,6 @@ namespace Lab6MDI
             }
         }
 
-
         /// <summary>
         /// Adios!
         /// </summary>
@@ -222,14 +221,6 @@ namespace Lab6MDI
             }
         }
 
-
-        private void LoadTextEditor()
-        {
-            frmTextEditor frm = frmTextEditor.Instance;
-            frm.MdiParent = this;
-            frm.Show();
-            frm.Focus();
-        }
         #endregion
 
         public void DisposeAll()
