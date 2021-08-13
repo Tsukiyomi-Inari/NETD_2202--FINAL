@@ -119,6 +119,23 @@ namespace Lab6MDI
             textFileInstance = null;
         }
 
+        public void  CutText()
+        {
+            rtbCanvas.Cut();
+        }
+        public void PasteText()
+        {
+            rtbCanvas.Paste();
+        }
+        public void CopyText()
+        {
+            rtbCanvas.Copy();
+        }
+
+        public void SelectAllText()
+        {
+            rtbCanvas.SelectAll();
+        }
         #endregion
 
     }
