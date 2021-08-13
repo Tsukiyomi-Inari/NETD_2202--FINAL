@@ -1,5 +1,5 @@
 ﻿/**   frmMainParent.cs
- *  @Author: Katherine Bellman
+ *  @Author: Russel Waring & Katherine Bellman
  *  @Program: Emergency Infection Tool
  *  @Description: MDI application with some previous labs called in as child forms within it
  *
@@ -8,6 +8,7 @@
  * 
  * @ Last changed on: 
  */
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,15 +27,29 @@ namespace Lab6MDI
         {
             InitializeComponent();
         }
+        #region "CHILD FORMS"
+        private void menuWindowOpenAverageCases_Click(object sender, EventArgs e)
+        {
+            RegionAverageWeeklyUnitsForm frm = RegionAverageWeeklyUnitsForm.Instance;
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Focus();
+        }
+        #endregion
         #region "EVENT HANDLERS"
         private void menuFileNew_Click(object sender, EventArgs e)
         {
-
+            //open new instance of text editor child form
+            frmBasicTextEditor frm = new frmBasicTextEditor();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Focus();
         }
 
         private void menuFileOpen_Click(object sender, EventArgs e)
         {
-
+            openFileDialog1.ShowDialog();
+            
         }
 
         private void menuFileSave_Click(object sender, EventArgs e)
@@ -49,12 +64,14 @@ namespace Lab6MDI
 
         private void menuFileClose_Click(object sender, EventArgs e)
         {
-
+            frmBasicTextEditor frm = new frmBasicTextEditor();
+            frm.MdiParent = this;
+            frm.Close();
         }
 
         private void menuFileExit_Click(object sender, EventArgs e)
         {
-            
+            Application.Exit();
         }
 
         private void menuEditCut_Click(object sender, EventArgs e)
@@ -76,17 +93,29 @@ namespace Lab6MDI
         {
 
         }
-
+        /// <summary>
+        /// Cascade windows
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void menuWindowCascade_Click(object sender, EventArgs e)
         {
             this.LayoutMdi(System.Windows.Forms.MdiLayout.Cascade);
         }
-
+        /// <summary>
+        /// Tile windows horizontally
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void menuWindowTileHorizontal_Click(object sender, EventArgs e)
         {
             this.LayoutMdi(System.Windows.Forms.MdiLayout.TileHorizontal);
         }
-
+        /// <summary>
+        ///   Tile windows vertically
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void menuWindowTileVertical_Click(object sender, EventArgs e)
         {
             this.LayoutMdi(System.Windows.Forms.MdiLayout.TileVertical);
@@ -98,12 +127,17 @@ namespace Lab6MDI
         /// <param name="e"></param>
         private void menuHelpAbout_Click(object sender, EventArgs e)
         {
-
+           /* frmAbout frm = new frmAbout();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Focus();*/
         }
         #endregion
+
         #region "CUSTOM METHODS"
 
-
+        
         #endregion
+
     }
 }

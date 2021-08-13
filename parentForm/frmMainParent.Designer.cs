@@ -36,8 +36,6 @@ namespace Lab6MDI
             this.menuFileNew = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFileOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFileSave = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuFileSaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFileClose = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFileExit = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,14 +45,16 @@ namespace Lab6MDI
             this.menuEditPaste = new System.Windows.Forms.ToolStripMenuItem();
             this.menuEditSelectAll = new System.Windows.Forms.ToolStripMenuItem();
             this.menuWindow = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.menuWindowCascade = new System.Windows.Forms.ToolStripMenuItem();
             this.menuWindowTileHorizontal = new System.Windows.Forms.ToolStripMenuItem();
             this.menuWindowTileVertical = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuWindowOpenContactTracer = new System.Windows.Forms.ToolStripMenuItem();
             this.menuWindowOpenAverageCases = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -113,10 +113,6 @@ namespace Lab6MDI
             this.menuFileSave.ToolTipText = "Save current open file";
             this.menuFileSave.Click += new System.EventHandler(this.menuFileSave_Click);
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // menuFileSaveAs
             // 
             this.menuFileSaveAs.Name = "menuFileSaveAs";
@@ -155,7 +151,7 @@ namespace Lab6MDI
             // menuEditCut
             // 
             this.menuEditCut.Name = "menuEditCut";
-            this.menuEditCut.Size = new System.Drawing.Size(180, 22);
+            this.menuEditCut.Size = new System.Drawing.Size(122, 22);
             this.menuEditCut.Text = "Cut";
             this.menuEditCut.ToolTipText = "Cut selected text";
             this.menuEditCut.Click += new System.EventHandler(this.menuEditCut_Click);
@@ -163,7 +159,7 @@ namespace Lab6MDI
             // menuEditCopy
             // 
             this.menuEditCopy.Name = "menuEditCopy";
-            this.menuEditCopy.Size = new System.Drawing.Size(180, 22);
+            this.menuEditCopy.Size = new System.Drawing.Size(122, 22);
             this.menuEditCopy.Text = "Copy";
             this.menuEditCopy.ToolTipText = "Copy currently selected text";
             this.menuEditCopy.Click += new System.EventHandler(this.menuEditCopy_Click);
@@ -171,7 +167,7 @@ namespace Lab6MDI
             // menuEditPaste
             // 
             this.menuEditPaste.Name = "menuEditPaste";
-            this.menuEditPaste.Size = new System.Drawing.Size(180, 22);
+            this.menuEditPaste.Size = new System.Drawing.Size(122, 22);
             this.menuEditPaste.Text = "Paste";
             this.menuEditPaste.ToolTipText = "Paste current text from clipboard";
             this.menuEditPaste.Click += new System.EventHandler(this.menuEditPaste_Click);
@@ -179,7 +175,7 @@ namespace Lab6MDI
             // menuEditSelectAll
             // 
             this.menuEditSelectAll.Name = "menuEditSelectAll";
-            this.menuEditSelectAll.Size = new System.Drawing.Size(180, 22);
+            this.menuEditSelectAll.Size = new System.Drawing.Size(122, 22);
             this.menuEditSelectAll.Text = "Select All";
             this.menuEditSelectAll.ToolTipText = "Select all text";
             this.menuEditSelectAll.Click += new System.EventHandler(this.menuEditSelectAll_Click);
@@ -197,15 +193,6 @@ namespace Lab6MDI
             this.menuWindow.Size = new System.Drawing.Size(63, 20);
             this.menuWindow.Text = "Window";
             this.menuWindow.ToolTipText = "Window menu options";
-            // 
-            // menuHelp
-            // 
-            this.menuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuHelpAbout});
-            this.menuHelp.Name = "menuHelp";
-            this.menuHelp.Size = new System.Drawing.Size(44, 20);
-            this.menuHelp.Text = "Help";
-            this.menuHelp.ToolTipText = "Help menu options";
             // 
             // menuWindowCascade
             // 
@@ -238,6 +225,7 @@ namespace Lab6MDI
             // 
             // menuWindowOpenContactTracer
             // 
+            this.menuWindowOpenContactTracer.Image = global::MidiFormParentFinal.Properties.Resources.disease_prevention__1_;
             this.menuWindowOpenContactTracer.Name = "menuWindowOpenContactTracer";
             this.menuWindowOpenContactTracer.Size = new System.Drawing.Size(182, 22);
             this.menuWindowOpenContactTracer.Text = "Open Contact Tracer";
@@ -245,18 +233,34 @@ namespace Lab6MDI
             // 
             // menuWindowOpenAverageCases
             // 
+            this.menuWindowOpenAverageCases.Image = global::MidiFormParentFinal.Properties.Resources.disease_prevention__1_;
             this.menuWindowOpenAverageCases.Name = "menuWindowOpenAverageCases";
             this.menuWindowOpenAverageCases.Size = new System.Drawing.Size(182, 22);
             this.menuWindowOpenAverageCases.Text = "Open Average Cases";
             this.menuWindowOpenAverageCases.ToolTipText = "Open average cases window";
+            this.menuWindowOpenAverageCases.Click += new System.EventHandler(this.menuWindowOpenAverageCases_Click);
+            // 
+            // menuHelp
+            // 
+            this.menuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuHelpAbout});
+            this.menuHelp.Name = "menuHelp";
+            this.menuHelp.Size = new System.Drawing.Size(44, 20);
+            this.menuHelp.Text = "Help";
+            this.menuHelp.ToolTipText = "Help menu options";
             // 
             // menuHelpAbout
             // 
+            this.menuHelpAbout.Image = global::MidiFormParentFinal.Properties.Resources.Icons8_Ios7_Very_Basic_Help_Filled;
             this.menuHelpAbout.Name = "menuHelpAbout";
             this.menuHelpAbout.Size = new System.Drawing.Size(180, 22);
             this.menuHelpAbout.Text = "About";
             this.menuHelpAbout.ToolTipText = "Open information about application window";
             this.menuHelpAbout.Click += new System.EventHandler(this.menuHelpAbout_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // frmMainParent
             // 
