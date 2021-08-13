@@ -29,6 +29,7 @@ namespace Lab6MDI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTextEditor));
             this.rtbCanvas = new System.Windows.Forms.RichTextBox();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.statusCharacterCountLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -49,8 +50,9 @@ namespace Lab6MDI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rtbCanvas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbCanvas.Location = new System.Drawing.Point(0, 0);
+            this.rtbCanvas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rtbCanvas.Name = "rtbCanvas";
-            this.rtbCanvas.Size = new System.Drawing.Size(482, 324);
+            this.rtbCanvas.Size = new System.Drawing.Size(524, 402);
             this.rtbCanvas.TabIndex = 1;
             this.rtbCanvas.Text = "";
             this.rtbCanvas.TextChanged += new System.EventHandler(this.rtbCanvas_TextChanged);
@@ -64,23 +66,24 @@ namespace Lab6MDI
             this.statusSplitter,
             this.statusChangeLabel,
             this.statusChange});
-            this.statusStrip.Location = new System.Drawing.Point(0, 327);
+            this.statusStrip.Location = new System.Drawing.Point(0, 398);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(482, 26);
+            this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 12, 0);
+            this.statusStrip.Size = new System.Drawing.Size(524, 26);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "statusStrip";
             // 
             // statusCharacterCountLabel
             // 
             this.statusCharacterCountLabel.Name = "statusCharacterCountLabel";
-            this.statusCharacterCountLabel.Size = new System.Drawing.Size(46, 20);
+            this.statusCharacterCountLabel.Size = new System.Drawing.Size(38, 21);
             this.statusCharacterCountLabel.Text = "chars:";
             // 
             // statusCharacterCount
             // 
             this.statusCharacterCount.AutoSize = false;
             this.statusCharacterCount.Name = "statusCharacterCount";
-            this.statusCharacterCount.Size = new System.Drawing.Size(300, 20);
+            this.statusCharacterCount.Size = new System.Drawing.Size(300, 21);
             this.statusCharacterCount.Text = "0";
             this.statusCharacterCount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.statusCharacterCount.ToolTipText = "Displays the number of characters in the file";
@@ -88,19 +91,19 @@ namespace Lab6MDI
             // statusSplitter
             // 
             this.statusSplitter.Name = "statusSplitter";
-            this.statusSplitter.Size = new System.Drawing.Size(13, 20);
+            this.statusSplitter.Size = new System.Drawing.Size(10, 21);
             this.statusSplitter.Text = "|";
             // 
             // statusChangeLabel
             // 
             this.statusChangeLabel.Name = "statusChangeLabel";
-            this.statusChangeLabel.Size = new System.Drawing.Size(62, 20);
+            this.statusChangeLabel.Size = new System.Drawing.Size(51, 21);
             this.statusChangeLabel.Text = "Change:";
             // 
             // statusChange
             // 
             this.statusChange.Name = "statusChange";
-            this.statusChange.Size = new System.Drawing.Size(41, 20);
+            this.statusChange.Size = new System.Drawing.Size(33, 21);
             this.statusChange.Text = "False";
             // 
             // openFileDialog
@@ -109,11 +112,13 @@ namespace Lab6MDI
             // 
             // frmTextEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 353);
+            this.ClientSize = new System.Drawing.Size(524, 424);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.rtbCanvas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmTextEditor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Untitled - Text Editor";
