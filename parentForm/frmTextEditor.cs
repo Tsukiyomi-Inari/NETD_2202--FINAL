@@ -114,11 +114,12 @@ namespace Lab6MDI
             }
         }
 
-        #endregion
-
         private void frmClosed(object sender, FormClosedEventArgs e)
         {
             textFileInstance = null;
         }
+
+        #endregion
+
     }
 }

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MidiFormParentFinal
+namespace Lab6MDI
 {
     public partial class frmAbout : Form
     {
@@ -17,7 +17,7 @@ namespace MidiFormParentFinal
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnOK_Click(object sender, EventArgs e)
         {
             this.Close();
         }

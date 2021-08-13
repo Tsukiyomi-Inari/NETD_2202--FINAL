@@ -56,10 +56,10 @@ namespace Lab6MDI
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCasesEntryPrompt.AutoSize = true;
-            this.labelCasesEntryPrompt.Location = new System.Drawing.Point(35, 23);
+            this.labelCasesEntryPrompt.Location = new System.Drawing.Point(34, 23);
             this.labelCasesEntryPrompt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCasesEntryPrompt.Name = "labelCasesEntryPrompt";
-            this.labelCasesEntryPrompt.Size = new System.Drawing.Size(101, 23);
+            this.labelCasesEntryPrompt.Size = new System.Drawing.Size(129, 29);
             this.labelCasesEntryPrompt.TabIndex = 0;
             this.labelCasesEntryPrompt.Text = "Daily &Cases:";
             // 
@@ -67,159 +67,123 @@ namespace Lab6MDI
             // 
             this.textBoxCasesInput.AcceptsReturn = true;
             this.textBoxCasesInput.AcceptsTab = true;
-            this.textBoxCasesInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxCasesInput.Location = new System.Drawing.Point(135, 20);
+            this.textBoxCasesInput.Location = new System.Drawing.Point(171, 20);
             this.textBoxCasesInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxCasesInput.Name = "textBoxCasesInput";
-            this.textBoxCasesInput.Size = new System.Drawing.Size(141, 31);
+            this.textBoxCasesInput.Size = new System.Drawing.Size(140, 36);
             this.textBoxCasesInput.TabIndex = 1;
             this.regionAverageToolTip.SetToolTip(this.textBoxCasesInput, "Enter the number of  cases for the current day and current region. ");
             // 
             // labelRegion1Prompt
             // 
-            this.labelRegion1Prompt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelRegion1Prompt.Location = new System.Drawing.Point(69, 70);
+            this.labelRegion1Prompt.Location = new System.Drawing.Point(69, 69);
             this.labelRegion1Prompt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelRegion1Prompt.Name = "labelRegion1Prompt";
-            this.labelRegion1Prompt.Size = new System.Drawing.Size(76, 23);
+            this.labelRegion1Prompt.Size = new System.Drawing.Size(98, 29);
             this.labelRegion1Prompt.TabIndex = 4;
             this.labelRegion1Prompt.Text = "Region &1";
             // 
             // labelRegion2Prompt
             // 
-            this.labelRegion2Prompt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelRegion2Prompt.Location = new System.Drawing.Point(255, 70);
+            this.labelRegion2Prompt.Location = new System.Drawing.Point(255, 69);
             this.labelRegion2Prompt.Name = "labelRegion2Prompt";
-            this.labelRegion2Prompt.Size = new System.Drawing.Size(76, 23);
+            this.labelRegion2Prompt.Size = new System.Drawing.Size(98, 29);
             this.labelRegion2Prompt.TabIndex = 6;
             this.labelRegion2Prompt.Text = "Region &2";
             // 
             // labelRegion3Prompt
             // 
-            this.labelRegion3Prompt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelRegion3Prompt.Location = new System.Drawing.Point(437, 70);
+            this.labelRegion3Prompt.Location = new System.Drawing.Point(436, 69);
             this.labelRegion3Prompt.Name = "labelRegion3Prompt";
-            this.labelRegion3Prompt.Size = new System.Drawing.Size(76, 23);
+            this.labelRegion3Prompt.Size = new System.Drawing.Size(98, 29);
             this.labelRegion3Prompt.TabIndex = 8;
             this.labelRegion3Prompt.Text = "Region &3";
             // 
             // textBoxRegion1List
             // 
-            this.textBoxRegion1List.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxRegion1List.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxRegion1List.Location = new System.Drawing.Point(35, 111);
+            this.textBoxRegion1List.Location = new System.Drawing.Point(34, 111);
             this.textBoxRegion1List.Multiline = true;
             this.textBoxRegion1List.Name = "textBoxRegion1List";
             this.textBoxRegion1List.ReadOnly = true;
-            this.textBoxRegion1List.Size = new System.Drawing.Size(139, 224);
+            this.textBoxRegion1List.Size = new System.Drawing.Size(139, 225);
             this.textBoxRegion1List.TabIndex = 5;
             this.regionAverageToolTip.SetToolTip(this.textBoxRegion1List, "Displays the  entered case units for region 1.");
             // 
             // textBoxRegion2List
             // 
-            this.textBoxRegion2List.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxRegion2List.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxRegion2List.Location = new System.Drawing.Point(221, 111);
+            this.textBoxRegion2List.Location = new System.Drawing.Point(220, 111);
             this.textBoxRegion2List.Multiline = true;
             this.textBoxRegion2List.Name = "textBoxRegion2List";
             this.textBoxRegion2List.ReadOnly = true;
-            this.textBoxRegion2List.Size = new System.Drawing.Size(139, 224);
+            this.textBoxRegion2List.Size = new System.Drawing.Size(139, 225);
             this.textBoxRegion2List.TabIndex = 7;
             this.regionAverageToolTip.SetToolTip(this.textBoxRegion2List, "Displays the  entered case units for region 2.");
             // 
             // textBoxRegion3List
             // 
-            this.textBoxRegion3List.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxRegion3List.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxRegion3List.Location = new System.Drawing.Point(406, 111);
             this.textBoxRegion3List.Multiline = true;
             this.textBoxRegion3List.Name = "textBoxRegion3List";
             this.textBoxRegion3List.ReadOnly = true;
-            this.textBoxRegion3List.Size = new System.Drawing.Size(139, 224);
+            this.textBoxRegion3List.Size = new System.Drawing.Size(139, 225);
             this.textBoxRegion3List.TabIndex = 9;
             this.regionAverageToolTip.SetToolTip(this.textBoxRegion3List, "Displays the  entered case units for region 3.");
             // 
             // textBoxRegion1AverageOutput
             // 
-            this.textBoxRegion1AverageOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxRegion1AverageOutput.BackColor = System.Drawing.SystemColors.ControlLight;
             this.textBoxRegion1AverageOutput.Location = new System.Drawing.Point(28, 361);
             this.textBoxRegion1AverageOutput.MaxLength = 327;
             this.textBoxRegion1AverageOutput.Name = "textBoxRegion1AverageOutput";
             this.textBoxRegion1AverageOutput.ReadOnly = true;
-            this.textBoxRegion1AverageOutput.Size = new System.Drawing.Size(156, 31);
+            this.textBoxRegion1AverageOutput.Size = new System.Drawing.Size(156, 36);
             this.textBoxRegion1AverageOutput.TabIndex = 10;
             this.textBoxRegion1AverageOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.regionAverageToolTip.SetToolTip(this.textBoxRegion1AverageOutput, "Displays the total average for region 1.");
             // 
             // textBoxRegion2AverageOutput
             // 
-            this.textBoxRegion2AverageOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxRegion2AverageOutput.BackColor = System.Drawing.SystemColors.ControlLight;
             this.textBoxRegion2AverageOutput.Location = new System.Drawing.Point(214, 361);
             this.textBoxRegion2AverageOutput.MaxLength = 327;
             this.textBoxRegion2AverageOutput.Name = "textBoxRegion2AverageOutput";
             this.textBoxRegion2AverageOutput.ReadOnly = true;
-            this.textBoxRegion2AverageOutput.Size = new System.Drawing.Size(156, 31);
+            this.textBoxRegion2AverageOutput.Size = new System.Drawing.Size(156, 36);
             this.textBoxRegion2AverageOutput.TabIndex = 11;
             this.textBoxRegion2AverageOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.regionAverageToolTip.SetToolTip(this.textBoxRegion2AverageOutput, "Displays the total average for region 2.");
             // 
             // textBoxRegion3AverageOutput
             // 
-            this.textBoxRegion3AverageOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxRegion3AverageOutput.BackColor = System.Drawing.SystemColors.ControlLight;
             this.textBoxRegion3AverageOutput.Location = new System.Drawing.Point(399, 361);
             this.textBoxRegion3AverageOutput.MaxLength = 327;
             this.textBoxRegion3AverageOutput.Name = "textBoxRegion3AverageOutput";
             this.textBoxRegion3AverageOutput.ReadOnly = true;
-            this.textBoxRegion3AverageOutput.Size = new System.Drawing.Size(156, 31);
+            this.textBoxRegion3AverageOutput.Size = new System.Drawing.Size(156, 36);
             this.textBoxRegion3AverageOutput.TabIndex = 12;
             this.textBoxRegion3AverageOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.regionAverageToolTip.SetToolTip(this.textBoxRegion3AverageOutput, "Displays the total average for region 3.");
             // 
             // textBoxTotalOveralAverageOutput
             // 
-            this.textBoxTotalOveralAverageOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxTotalOveralAverageOutput.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBoxTotalOveralAverageOutput.Location = new System.Drawing.Point(35, 422);
+            this.textBoxTotalOveralAverageOutput.Location = new System.Drawing.Point(34, 422);
             this.textBoxTotalOveralAverageOutput.Name = "textBoxTotalOveralAverageOutput";
             this.textBoxTotalOveralAverageOutput.ReadOnly = true;
-            this.textBoxTotalOveralAverageOutput.Size = new System.Drawing.Size(510, 31);
+            this.textBoxTotalOveralAverageOutput.Size = new System.Drawing.Size(510, 36);
             this.textBoxTotalOveralAverageOutput.TabIndex = 13;
             this.textBoxTotalOveralAverageOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.regionAverageToolTip.SetToolTip(this.textBoxTotalOveralAverageOutput, "Displays the average out of all three regions.");
             // 
             // buttonEnter
             // 
-            this.buttonEnter.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonEnter.Location = new System.Drawing.Point(35, 468);
+            this.buttonEnter.Location = new System.Drawing.Point(34, 467);
             this.buttonEnter.Name = "buttonEnter";
-            this.buttonEnter.Size = new System.Drawing.Size(139, 33);
+            this.buttonEnter.Size = new System.Drawing.Size(140, 33);
             this.buttonEnter.TabIndex = 14;
             this.buttonEnter.Text = "&Enter";
             this.regionAverageToolTip.SetToolTip(this.buttonEnter, "Click to input the current case total.");
@@ -228,12 +192,9 @@ namespace Lab6MDI
             // 
             // buttonReset
             // 
-            this.buttonReset.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonReset.Location = new System.Drawing.Point(221, 468);
+            this.buttonReset.Location = new System.Drawing.Point(220, 467);
             this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(139, 33);
+            this.buttonReset.Size = new System.Drawing.Size(140, 33);
             this.buttonReset.TabIndex = 15;
             this.buttonReset.Text = "&Reset";
             this.regionAverageToolTip.SetToolTip(this.buttonReset, "Resets the application.");
@@ -242,12 +203,9 @@ namespace Lab6MDI
             // 
             // buttonExit
             // 
-            this.buttonExit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonExit.Location = new System.Drawing.Point(406, 468);
+            this.buttonExit.Location = new System.Drawing.Point(406, 467);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(139, 33);
+            this.buttonExit.Size = new System.Drawing.Size(140, 33);
             this.buttonExit.TabIndex = 16;
             this.buttonExit.Text = "E&xit";
             this.regionAverageToolTip.SetToolTip(this.buttonExit, "Exits application.");
@@ -260,9 +218,9 @@ namespace Lab6MDI
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelDayCount.AutoSize = true;
-            this.labelDayCount.Location = new System.Drawing.Point(489, 20);
+            this.labelDayCount.Location = new System.Drawing.Point(489, 19);
             this.labelDayCount.Name = "labelDayCount";
-            this.labelDayCount.Size = new System.Drawing.Size(58, 23);
+            this.labelDayCount.Size = new System.Drawing.Size(73, 29);
             this.labelDayCount.TabIndex = 3;
             this.labelDayCount.Text = "Day  1";
             this.labelDayCount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -271,10 +229,10 @@ namespace Lab6MDI
             // RegionAverageWeeklyUnitsForm
             // 
             this.AcceptButton = this.buttonEnter;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonReset;
-            this.ClientSize = new System.Drawing.Size(579, 523);
+            this.ClientSize = new System.Drawing.Size(579, 524);
             this.Controls.Add(this.labelDayCount);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonReset);
@@ -295,10 +253,13 @@ namespace Lab6MDI
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(597, 571);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(597, 571);
             this.Name = "RegionAverageWeeklyUnitsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Average Weekly Units by Region";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmClosed);
             this.Load += new System.EventHandler(this.RegionAverageWeeklyUnitsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

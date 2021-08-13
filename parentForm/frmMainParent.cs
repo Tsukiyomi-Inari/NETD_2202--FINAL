@@ -28,15 +28,7 @@ namespace Lab6MDI
         {
             InitializeComponent();
         }
-        #region "CHILD FORMS"
-        private void menuWindowOpenAverageCases_Click(object sender, EventArgs e)
-        {
-            RegionAverageWeeklyUnitsForm frm = RegionAverageWeeklyUnitsForm.Instance;
-            frm.MdiParent = this;
-            frm.Show();
-            frm.Focus();
-        }
-        #endregion
+
         #region "EVENT HANDLERS"
         private void frmMainParent_Load(object sender, EventArgs e)
         {
@@ -76,7 +68,7 @@ namespace Lab6MDI
 
         private void menuFileClose_Click(object sender, EventArgs e)
         {
-            frmBasicTextEditor frm = new frmBasicTextEditor();
+            frmTextEditor frm = new frmTextEditor();
             frm.MdiParent = this;
             frm.Close();
         }
@@ -129,6 +121,22 @@ namespace Lab6MDI
         private void menuWindowTileVertical_Click(object sender, EventArgs e)
         {
             this.LayoutMdi(System.Windows.Forms.MdiLayout.TileVertical);
+        }
+
+        private void menuWindowOpenContactTracer_Click(object sender, EventArgs e)
+        {
+            frmContactTracer frm = frmContactTracer.Instance;
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Focus();
+        }
+
+        private void menuWindowOpenAverageCases_Click(object sender, EventArgs e)
+        {
+            RegionAverageWeeklyUnitsForm frm = RegionAverageWeeklyUnitsForm.Instance;
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Focus();
         }
         #endregion
         #region "Help Tab"
@@ -233,8 +241,7 @@ namespace Lab6MDI
             }
         }
 
-        
-        #endregion
 
+        #endregion
     }
 }

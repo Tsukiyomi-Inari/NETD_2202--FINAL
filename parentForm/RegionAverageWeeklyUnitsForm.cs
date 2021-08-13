@@ -186,6 +186,11 @@ namespace Lab6MDI
             this.Close();
             regionAverageWeeklyUnitsInstance = null;
         }
+
+        private void frmClosed(object sender, FormClosedEventArgs e)
+        {
+            regionAverageWeeklyUnitsInstance = null;
+        }
         #endregion
 
         #region "Functions"
