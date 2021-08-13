@@ -71,10 +71,7 @@ namespace Lab6MDI
 
         private void menuFileExit_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure you want to exit?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
+            ExitApplication();
         }
         #endregion
         #region "Edit Tab"
