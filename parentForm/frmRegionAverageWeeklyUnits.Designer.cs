@@ -59,7 +59,7 @@ namespace Lab6MDI
             this.labelCasesEntryPrompt.Location = new System.Drawing.Point(34, 23);
             this.labelCasesEntryPrompt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCasesEntryPrompt.Name = "labelCasesEntryPrompt";
-            this.labelCasesEntryPrompt.Size = new System.Drawing.Size(129, 29);
+            this.labelCasesEntryPrompt.Size = new System.Drawing.Size(101, 23);
             this.labelCasesEntryPrompt.TabIndex = 0;
             this.labelCasesEntryPrompt.Text = "Daily &Cases:";
             // 
@@ -70,7 +70,7 @@ namespace Lab6MDI
             this.textBoxCasesInput.Location = new System.Drawing.Point(171, 20);
             this.textBoxCasesInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxCasesInput.Name = "textBoxCasesInput";
-            this.textBoxCasesInput.Size = new System.Drawing.Size(140, 36);
+            this.textBoxCasesInput.Size = new System.Drawing.Size(140, 31);
             this.textBoxCasesInput.TabIndex = 1;
             this.regionAverageToolTip.SetToolTip(this.textBoxCasesInput, "Enter the number of  cases for the current day and current region. ");
             // 
@@ -139,7 +139,7 @@ namespace Lab6MDI
             this.textBoxRegion1AverageOutput.MaxLength = 327;
             this.textBoxRegion1AverageOutput.Name = "textBoxRegion1AverageOutput";
             this.textBoxRegion1AverageOutput.ReadOnly = true;
-            this.textBoxRegion1AverageOutput.Size = new System.Drawing.Size(156, 36);
+            this.textBoxRegion1AverageOutput.Size = new System.Drawing.Size(156, 31);
             this.textBoxRegion1AverageOutput.TabIndex = 10;
             this.textBoxRegion1AverageOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.regionAverageToolTip.SetToolTip(this.textBoxRegion1AverageOutput, "Displays the total average for region 1.");
@@ -151,7 +151,7 @@ namespace Lab6MDI
             this.textBoxRegion2AverageOutput.MaxLength = 327;
             this.textBoxRegion2AverageOutput.Name = "textBoxRegion2AverageOutput";
             this.textBoxRegion2AverageOutput.ReadOnly = true;
-            this.textBoxRegion2AverageOutput.Size = new System.Drawing.Size(156, 36);
+            this.textBoxRegion2AverageOutput.Size = new System.Drawing.Size(156, 31);
             this.textBoxRegion2AverageOutput.TabIndex = 11;
             this.textBoxRegion2AverageOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.regionAverageToolTip.SetToolTip(this.textBoxRegion2AverageOutput, "Displays the total average for region 2.");
@@ -163,7 +163,7 @@ namespace Lab6MDI
             this.textBoxRegion3AverageOutput.MaxLength = 327;
             this.textBoxRegion3AverageOutput.Name = "textBoxRegion3AverageOutput";
             this.textBoxRegion3AverageOutput.ReadOnly = true;
-            this.textBoxRegion3AverageOutput.Size = new System.Drawing.Size(156, 36);
+            this.textBoxRegion3AverageOutput.Size = new System.Drawing.Size(156, 31);
             this.textBoxRegion3AverageOutput.TabIndex = 12;
             this.textBoxRegion3AverageOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.regionAverageToolTip.SetToolTip(this.textBoxRegion3AverageOutput, "Displays the total average for region 3.");
@@ -174,7 +174,7 @@ namespace Lab6MDI
             this.textBoxTotalOveralAverageOutput.Location = new System.Drawing.Point(34, 422);
             this.textBoxTotalOveralAverageOutput.Name = "textBoxTotalOveralAverageOutput";
             this.textBoxTotalOveralAverageOutput.ReadOnly = true;
-            this.textBoxTotalOveralAverageOutput.Size = new System.Drawing.Size(510, 36);
+            this.textBoxTotalOveralAverageOutput.Size = new System.Drawing.Size(510, 31);
             this.textBoxTotalOveralAverageOutput.TabIndex = 13;
             this.textBoxTotalOveralAverageOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.regionAverageToolTip.SetToolTip(this.textBoxTotalOveralAverageOutput, "Displays the average out of all three regions.");
@@ -220,19 +220,19 @@ namespace Lab6MDI
             this.labelDayCount.AutoSize = true;
             this.labelDayCount.Location = new System.Drawing.Point(489, 19);
             this.labelDayCount.Name = "labelDayCount";
-            this.labelDayCount.Size = new System.Drawing.Size(73, 29);
+            this.labelDayCount.Size = new System.Drawing.Size(58, 23);
             this.labelDayCount.TabIndex = 3;
             this.labelDayCount.Text = "Day  1";
             this.labelDayCount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.regionAverageToolTip.SetToolTip(this.labelDayCount, "Current day count for current region.");
             // 
-            // RegionAverageWeeklyUnitsForm
+            // frmRegionAverageWeeklyUnits
             // 
             this.AcceptButton = this.buttonEnter;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonReset;
-            this.ClientSize = new System.Drawing.Size(579, 524);
+            this.ClientSize = new System.Drawing.Size(581, 532);
             this.Controls.Add(this.labelDayCount);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonReset);
@@ -256,9 +256,9 @@ namespace Lab6MDI
             this.MaximumSize = new System.Drawing.Size(597, 571);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(597, 571);
-            this.Name = "RegionAverageWeeklyUnitsForm";
+            this.Name = "frmRegionAverageWeeklyUnits";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Average Weekly Units by Region";
+            this.Text = "Average Weekly Cases by Region";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmClosed);
             this.Load += new System.EventHandler(this.RegionAverageWeeklyUnitsForm_Load);
             this.ResumeLayout(false);

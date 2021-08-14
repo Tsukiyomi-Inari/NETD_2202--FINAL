@@ -311,7 +311,7 @@ namespace Lab6MDI
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(483, 428);
             this.Name = "frmContactTracer";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Contact Tracer";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmClosed);
             this.Load += new System.EventHandler(this.frmContactTracer_Load);

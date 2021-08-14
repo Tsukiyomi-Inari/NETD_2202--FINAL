@@ -297,7 +297,7 @@ namespace Lab6MDI
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmFelineOverlords";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Feline Overlords";
             this.tipToolFeline.SetToolTip(this, "Application to register feline overlords");
             this.Load += new System.EventHandler(this.frmFelineOverlords_Load);

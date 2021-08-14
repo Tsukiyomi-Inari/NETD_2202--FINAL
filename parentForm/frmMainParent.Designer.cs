@@ -86,6 +86,7 @@ namespace Lab6MDI
             this.menuFile.Name = "menuFile";
             this.menuFile.Size = new System.Drawing.Size(37, 20);
             this.menuFile.Text = "File";
+            this.menuFile.ToolTipText = "File menu options";
             // 
             // menuFileNew
             // 
@@ -93,7 +94,7 @@ namespace Lab6MDI
             this.menuFileNew.Image = global::MidiFormParentFinal.Properties.Resources.Icons8_Ios7_Files_Txt;
             this.menuFileNew.Name = "menuFileNew";
             this.menuFileNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.menuFileNew.Size = new System.Drawing.Size(146, 22);
+            this.menuFileNew.Size = new System.Drawing.Size(184, 26);
             this.menuFileNew.Text = "&New";
             this.menuFileNew.ToolTipText = "Start new document";
             this.menuFileNew.Click += new System.EventHandler(this.menuFileNew_Click);
@@ -103,9 +104,9 @@ namespace Lab6MDI
             this.menuFileOpen.Image = global::MidiFormParentFinal.Properties.Resources.Icons8_Ios7_Very_Basic_Opened_Folder;
             this.menuFileOpen.Name = "menuFileOpen";
             this.menuFileOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.menuFileOpen.Size = new System.Drawing.Size(146, 22);
+            this.menuFileOpen.Size = new System.Drawing.Size(184, 26);
             this.menuFileOpen.Text = "&Open";
-            this.menuFileOpen.ToolTipText = "Opena saved file ";
+            this.menuFileOpen.ToolTipText = "Open a saved file ";
             this.menuFileOpen.Click += new System.EventHandler(this.menuFileOpen_Click);
             // 
             // menuFileSave
@@ -113,7 +114,7 @@ namespace Lab6MDI
             this.menuFileSave.Image = global::MidiFormParentFinal.Properties.Resources.Icons8_Ios7_User_Interface_Save_As;
             this.menuFileSave.Name = "menuFileSave";
             this.menuFileSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.menuFileSave.Size = new System.Drawing.Size(146, 22);
+            this.menuFileSave.Size = new System.Drawing.Size(184, 26);
             this.menuFileSave.Text = "&Save";
             this.menuFileSave.ToolTipText = "Save current open file";
             this.menuFileSave.Click += new System.EventHandler(this.menuFileSave_Click);
@@ -121,7 +122,7 @@ namespace Lab6MDI
             // menuFileSaveAs
             // 
             this.menuFileSaveAs.Name = "menuFileSaveAs";
-            this.menuFileSaveAs.Size = new System.Drawing.Size(146, 22);
+            this.menuFileSaveAs.Size = new System.Drawing.Size(184, 26);
             this.menuFileSaveAs.Text = "Save As";
             this.menuFileSaveAs.ToolTipText = "Save document as";
             this.menuFileSaveAs.Click += new System.EventHandler(this.menuFileSaveAs_Click);
@@ -129,7 +130,7 @@ namespace Lab6MDI
             // menuFileClose
             // 
             this.menuFileClose.Name = "menuFileClose";
-            this.menuFileClose.Size = new System.Drawing.Size(146, 22);
+            this.menuFileClose.Size = new System.Drawing.Size(184, 26);
             this.menuFileClose.Text = "Close";
             this.menuFileClose.ToolTipText = "Close current window";
             this.menuFileClose.Click += new System.EventHandler(this.menuFileClose_Click);
@@ -137,7 +138,7 @@ namespace Lab6MDI
             // menuFileExit
             // 
             this.menuFileExit.Name = "menuFileExit";
-            this.menuFileExit.Size = new System.Drawing.Size(146, 22);
+            this.menuFileExit.Size = new System.Drawing.Size(184, 26);
             this.menuFileExit.Text = "Exit";
             this.menuFileExit.ToolTipText = "Exit application";
             this.menuFileExit.Click += new System.EventHandler(this.menuFileExit_Click);
@@ -152,12 +153,13 @@ namespace Lab6MDI
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.ToolTipText = "Edit menu option";
             // 
             // menuEditCut
             // 
             this.menuEditCut.Image = global::MidiFormParentFinal.Properties.Resources.Icons8_Ios7_Editing_Cut_Filled;
             this.menuEditCut.Name = "menuEditCut";
-            this.menuEditCut.Size = new System.Drawing.Size(122, 22);
+            this.menuEditCut.Size = new System.Drawing.Size(184, 26);
             this.menuEditCut.Text = "Cut";
             this.menuEditCut.ToolTipText = "Cut selected text";
             this.menuEditCut.Click += new System.EventHandler(this.menuEditCut_Click);
@@ -166,7 +168,7 @@ namespace Lab6MDI
             // 
             this.menuEditCopy.Image = global::MidiFormParentFinal.Properties.Resources.Icons8_Ios7_Very_Basic_Copy;
             this.menuEditCopy.Name = "menuEditCopy";
-            this.menuEditCopy.Size = new System.Drawing.Size(122, 22);
+            this.menuEditCopy.Size = new System.Drawing.Size(184, 26);
             this.menuEditCopy.Text = "Copy";
             this.menuEditCopy.ToolTipText = "Copy currently selected text";
             this.menuEditCopy.Click += new System.EventHandler(this.menuEditCopy_Click);
@@ -175,7 +177,7 @@ namespace Lab6MDI
             // 
             this.menuEditPaste.Image = global::MidiFormParentFinal.Properties.Resources.Custom_Icon_Design_Mini_Paste;
             this.menuEditPaste.Name = "menuEditPaste";
-            this.menuEditPaste.Size = new System.Drawing.Size(122, 22);
+            this.menuEditPaste.Size = new System.Drawing.Size(184, 26);
             this.menuEditPaste.Text = "Paste";
             this.menuEditPaste.ToolTipText = "Paste current text from clipboard";
             this.menuEditPaste.Click += new System.EventHandler(this.menuEditPaste_Click);
@@ -183,7 +185,7 @@ namespace Lab6MDI
             // menuEditSelectAll
             // 
             this.menuEditSelectAll.Name = "menuEditSelectAll";
-            this.menuEditSelectAll.Size = new System.Drawing.Size(122, 22);
+            this.menuEditSelectAll.Size = new System.Drawing.Size(184, 26);
             this.menuEditSelectAll.Text = "Select All";
             this.menuEditSelectAll.ToolTipText = "Select all text";
             this.menuEditSelectAll.Click += new System.EventHandler(this.menuEditSelectAll_Click);
@@ -252,6 +254,7 @@ namespace Lab6MDI
             // 
             // menuWindowFelineOverlords
             // 
+            this.menuWindowFelineOverlords.Image = global::MidiFormParentFinal.Properties.Resources.Icons8_Windows_8_Holidays_Black_Cat;
             this.menuWindowFelineOverlords.Name = "menuWindowFelineOverlords";
             this.menuWindowFelineOverlords.Size = new System.Drawing.Size(186, 26);
             this.menuWindowFelineOverlords.Text = "Feline Overlords ";
@@ -270,7 +273,7 @@ namespace Lab6MDI
             // 
             this.menuHelpAbout.Image = global::MidiFormParentFinal.Properties.Resources.Icons8_Ios7_Very_Basic_Help_Filled;
             this.menuHelpAbout.Name = "menuHelpAbout";
-            this.menuHelpAbout.Size = new System.Drawing.Size(107, 22);
+            this.menuHelpAbout.Size = new System.Drawing.Size(184, 26);
             this.menuHelpAbout.Text = "About";
             this.menuHelpAbout.ToolTipText = "Open information about application window";
             this.menuHelpAbout.Click += new System.EventHandler(this.menuHelpAbout_Click);
