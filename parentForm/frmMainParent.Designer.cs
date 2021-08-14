@@ -245,7 +245,7 @@ namespace Lab6MDI
             // 
             // menuWindowOpenAverageCases
             // 
-            this.menuWindowOpenAverageCases.Image = global::MidiFormParentFinal.Properties.Resources.prevention;
+            this.menuWindowOpenAverageCases.Image = global::MidiFormParentFinal.Properties.Resources.disease_prevention__1_;
             this.menuWindowOpenAverageCases.Name = "menuWindowOpenAverageCases";
             this.menuWindowOpenAverageCases.Size = new System.Drawing.Size(186, 26);
             this.menuWindowOpenAverageCases.Text = "Open Average Cases";

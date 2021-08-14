@@ -7,8 +7,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -90,16 +88,6 @@ namespace Lab6MDI
         }
 
         /// <summary>
-        /// Event handler for 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnExitClick(object sender, EventArgs e)
-        {
-
-        }
-
-        /// <summary>
         /// Event handler to set all to default by calling the SetDefaults() method
         /// </summary>
         /// <param name="sender"></param>
@@ -109,6 +97,20 @@ namespace Lab6MDI
             SetDefaults();
         }
 
+        /// <summary>
+        /// Method to set current instance of form to Null when closed
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnCloseClick(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void frmClosed(object sender, FormClosedEventArgs e)
+        {
+            felineOverlordsInstance = null;
+        }
 
         #endregion
         #region CUSTOM METHODS (FUCNTIONS)
@@ -153,15 +155,6 @@ namespace Lab6MDI
             {
                 MessageBox.Show("A selection of \"sex\" for feline must be made.", "Error", MessageBoxButtons.OK);
             }
-        }
-        /// <summary>
-        /// Method to set current instance of form to Null when closed
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnCloseClick(object sender, EventArgs e)
-        {
-            felineOverlordsInstance = null;
         }
         #endregion
     }

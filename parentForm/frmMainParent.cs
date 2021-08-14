@@ -10,13 +10,6 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
@@ -83,15 +76,20 @@ namespace Lab6MDI
             SaveAsFile();
         }
         /// <summary>
-        /// Closes Text editor child form
+        /// Closes active child form
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void menuFileClose_Click(object sender, EventArgs e)
         {
-            frmTextEditor frm = new frmTextEditor();
-            frm.MdiParent = this;
-            frm.Close();
+            if(ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+            else
+            {
+                // do nothing
+            }
         }
         /// <summary>
         /// Exits parent application
@@ -262,7 +260,6 @@ namespace Lab6MDI
                 //Instance.FileNameCurrent.Text = Path.GetFileName(openFileDialog1.FileName);
             }
         }
-
         /// <summary>
         /// Adios!
         /// </summary>
@@ -273,23 +270,7 @@ namespace Lab6MDI
                 Application.Exit();
             }
         }
-
         #endregion
-        /// <summary>
-        /// Method to close all open child forms
-        /// </summary>
-        public void DisposeAll()
-        {
-            foreach(Form frm in this.MdiChildren)
-            {
-                frm.Dispose();
-                return;
-            }
-        }
-
-
         #endregion
-
-
     }
 }

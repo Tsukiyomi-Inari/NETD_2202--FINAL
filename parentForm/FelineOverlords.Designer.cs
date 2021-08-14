@@ -63,8 +63,9 @@ namespace Lab6MDI
             this.dgvFelineOverlords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFelineOverlords.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dgvFelineOverlords.Location = new System.Drawing.Point(364, 106);
-            this.dgvFelineOverlords.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvFelineOverlords.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvFelineOverlords.Name = "dgvFelineOverlords";
+            this.dgvFelineOverlords.RowHeadersWidth = 51;
             this.dgvFelineOverlords.RowTemplate.Height = 25;
             this.dgvFelineOverlords.Size = new System.Drawing.Size(543, 343);
             this.dgvFelineOverlords.TabIndex = 14;
@@ -75,17 +76,16 @@ namespace Lab6MDI
             this.label1.BackColor = System.Drawing.SystemColors.MenuText;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label1.Location = new System.Drawing.Point(428, 19);
+            this.label1.Location = new System.Drawing.Point(428, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(407, 67);
+            this.label1.Size = new System.Drawing.Size(510, 84);
             this.label1.TabIndex = 16;
             this.label1.Text = "Feline Overlords";
             // 
             // btnClose
             // 
             this.btnClose.Location = new System.Drawing.Point(808, 487);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(136, 50);
             this.btnClose.TabIndex = 15;
@@ -96,9 +96,8 @@ namespace Lab6MDI
             // btnReset
             // 
             this.btnReset.Location = new System.Drawing.Point(135, 235);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(106, 34);
+            this.btnReset.Size = new System.Drawing.Size(107, 34);
             this.btnReset.TabIndex = 13;
             this.btnReset.Text = "&Reset";
             this.btnReset.UseVisualStyleBackColor = true;
@@ -107,9 +106,8 @@ namespace Lab6MDI
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(25, 235);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(106, 34);
+            this.btnSave.Size = new System.Drawing.Size(107, 34);
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "&Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -120,9 +118,9 @@ namespace Lab6MDI
             this.lblName.AutoSize = true;
             this.lblName.BackColor = System.Drawing.SystemColors.MenuText;
             this.lblName.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblName.Location = new System.Drawing.Point(37, 26);
+            this.lblName.Location = new System.Drawing.Point(37, 27);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(55, 23);
+            this.lblName.Size = new System.Drawing.Size(70, 28);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name:";
             // 
@@ -130,7 +128,7 @@ namespace Lab6MDI
             // 
             this.txbName.Location = new System.Drawing.Point(119, 24);
             this.txbName.Name = "txbName";
-            this.txbName.Size = new System.Drawing.Size(100, 30);
+            this.txbName.Size = new System.Drawing.Size(100, 35);
             this.txbName.TabIndex = 2;
             this.tipToolFeline.SetToolTip(this.txbName, "Enter name of feline overlord");
             // 
@@ -142,7 +140,7 @@ namespace Lab6MDI
             this.chkFixed.ForeColor = System.Drawing.SystemColors.Window;
             this.chkFixed.Location = new System.Drawing.Point(27, 188);
             this.chkFixed.Name = "chkFixed";
-            this.chkFixed.Size = new System.Drawing.Size(104, 27);
+            this.chkFixed.Size = new System.Drawing.Size(128, 32);
             this.chkFixed.TabIndex = 11;
             this.chkFixed.Text = "Fixed? :   ";
             this.tipToolFeline.SetToolTip(this.chkFixed, "Check if feline is fixed.");
@@ -155,7 +153,7 @@ namespace Lab6MDI
             this.lblSex.ForeColor = System.Drawing.SystemColors.Window;
             this.lblSex.Location = new System.Drawing.Point(43, 67);
             this.lblSex.Name = "lblSex";
-            this.lblSex.Size = new System.Drawing.Size(43, 23);
+            this.lblSex.Size = new System.Drawing.Size(55, 28);
             this.lblSex.TabIndex = 3;
             this.lblSex.Text = "Sex:";
             // 
@@ -166,7 +164,7 @@ namespace Lab6MDI
             this.lblColoring.ForeColor = System.Drawing.SystemColors.Window;
             this.lblColoring.Location = new System.Drawing.Point(23, 109);
             this.lblColoring.Name = "lblColoring";
-            this.lblColoring.Size = new System.Drawing.Size(83, 23);
+            this.lblColoring.Size = new System.Drawing.Size(104, 28);
             this.lblColoring.TabIndex = 6;
             this.lblColoring.Text = "Colouring:";
             // 
@@ -174,7 +172,7 @@ namespace Lab6MDI
             // 
             this.txbBreed.Location = new System.Drawing.Point(119, 150);
             this.txbBreed.Name = "txbBreed";
-            this.txbBreed.Size = new System.Drawing.Size(100, 30);
+            this.txbBreed.Size = new System.Drawing.Size(100, 35);
             this.txbBreed.TabIndex = 10;
             this.tipToolFeline.SetToolTip(this.txbBreed, "Enter breed of feline");
             // 
@@ -185,15 +183,15 @@ namespace Lab6MDI
             this.lblBreed.ForeColor = System.Drawing.SystemColors.Window;
             this.lblBreed.Location = new System.Drawing.Point(35, 153);
             this.lblBreed.Name = "lblBreed";
-            this.lblBreed.Size = new System.Drawing.Size(58, 23);
+            this.lblBreed.Size = new System.Drawing.Size(75, 28);
             this.lblBreed.TabIndex = 9;
             this.lblBreed.Text = "Breed:";
             // 
             // btnSetColor
             // 
-            this.btnSetColor.Location = new System.Drawing.Point(174, 107);
+            this.btnSetColor.Location = new System.Drawing.Point(173, 106);
             this.btnSetColor.Name = "btnSetColor";
-            this.btnSetColor.Size = new System.Drawing.Size(45, 30);
+            this.btnSetColor.Size = new System.Drawing.Size(45, 29);
             this.btnSetColor.TabIndex = 8;
             this.btnSetColor.Text = "S&et";
             this.tipToolFeline.SetToolTip(this.btnSetColor, "Press to confirm colouring selection");
@@ -205,9 +203,9 @@ namespace Lab6MDI
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.MenuText;
             this.label6.ForeColor = System.Drawing.SystemColors.Window;
-            this.label6.Location = new System.Drawing.Point(6, -2);
+            this.label6.Location = new System.Drawing.Point(5, -1);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 23);
+            this.label6.Size = new System.Drawing.Size(141, 28);
             this.label6.TabIndex = 0;
             this.label6.Text = "Add Overlord";
             // 
@@ -229,7 +227,7 @@ namespace Lab6MDI
             this.groupBox1.Controls.Add(this.btnSave);
             this.groupBox1.Controls.Add(this.btnReset);
             this.groupBox1.Controls.Add(this.grbSexPick);
-            this.groupBox1.Location = new System.Drawing.Point(18, 21);
+            this.groupBox1.Location = new System.Drawing.Point(19, 21);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(271, 280);
             this.groupBox1.TabIndex = 0;
@@ -240,18 +238,18 @@ namespace Lab6MDI
             // 
             this.lblPickColoring.BackColor = System.Drawing.SystemColors.GrayText;
             this.lblPickColoring.ForeColor = System.Drawing.Color.Transparent;
-            this.lblPickColoring.Location = new System.Drawing.Point(122, 107);
+            this.lblPickColoring.Location = new System.Drawing.Point(123, 106);
             this.lblPickColoring.Name = "lblPickColoring";
-            this.lblPickColoring.Size = new System.Drawing.Size(33, 30);
+            this.lblPickColoring.Size = new System.Drawing.Size(33, 29);
             this.lblPickColoring.TabIndex = 7;
             this.tipToolFeline.SetToolTip(this.lblPickColoring, "Use Color Dialog box to select colouring");
             // 
             // rbtSexFemale
             // 
             this.rbtSexFemale.ForeColor = System.Drawing.SystemColors.Window;
-            this.rbtSexFemale.Location = new System.Drawing.Point(174, 67);
+            this.rbtSexFemale.Location = new System.Drawing.Point(173, 67);
             this.rbtSexFemale.Name = "rbtSexFemale";
-            this.rbtSexFemale.Size = new System.Drawing.Size(94, 27);
+            this.rbtSexFemale.Size = new System.Drawing.Size(93, 27);
             this.rbtSexFemale.TabIndex = 5;
             this.rbtSexFemale.Text = "Female";
             this.tipToolFeline.SetToolTip(this.rbtSexFemale, "Select if feline is female");
@@ -272,20 +270,20 @@ namespace Lab6MDI
             // 
             this.grbSexPick.Location = new System.Drawing.Point(105, 59);
             this.grbSexPick.Name = "grbSexPick";
-            this.grbSexPick.Size = new System.Drawing.Size(159, 37);
+            this.grbSexPick.Size = new System.Drawing.Size(159, 36);
             this.grbSexPick.TabIndex = 14;
             this.grbSexPick.TabStop = false;
             // 
             // frmFelineOverlords
             // 
             this.AcceptButton = this.btnSave;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.btnReset;
-            this.ClientSize = new System.Drawing.Size(971, 558);
+            this.ClientSize = new System.Drawing.Size(971, 559);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvFelineOverlords);
@@ -293,13 +291,14 @@ namespace Lab6MDI
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmFelineOverlords";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Feline Overlords";
             this.tipToolFeline.SetToolTip(this, "Application to register feline overlords");
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmClosed);
             this.Load += new System.EventHandler(this.frmFelineOverlords_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFelineOverlords)).EndInit();
             this.groupBox1.ResumeLayout(false);
