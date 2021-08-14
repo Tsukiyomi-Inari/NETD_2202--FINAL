@@ -33,7 +33,7 @@ namespace Lab6MDI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFelineOverlords));
             this.dgvFelineOverlords = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
@@ -82,16 +82,16 @@ namespace Lab6MDI
             this.label1.TabIndex = 16;
             this.label1.Text = "Feline Overlords";
             // 
-            // btnExit
+            // btnClose
             // 
-            this.btnExit.Location = new System.Drawing.Point(808, 487);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(136, 50);
-            this.btnExit.TabIndex = 15;
-            this.btnExit.Text = "E&xit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExitClick);
+            this.btnClose.Location = new System.Drawing.Point(808, 487);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(136, 50);
+            this.btnClose.TabIndex = 15;
+            this.btnClose.Text = "C&lose";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnCloseClick);
             // 
             // btnReset
             // 
@@ -286,7 +286,7 @@ namespace Lab6MDI
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.btnReset;
             this.ClientSize = new System.Drawing.Size(971, 558);
-            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvFelineOverlords);
             this.Controls.Add(this.groupBox1);
@@ -313,7 +313,7 @@ namespace Lab6MDI
 
         private System.Windows.Forms.DataGridView dgvFelineOverlords;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label lblName;

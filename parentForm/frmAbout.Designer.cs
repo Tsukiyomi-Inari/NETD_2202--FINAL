@@ -32,11 +32,13 @@ namespace Lab6MDI
             this.btnOK = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblContent = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(82, 169);
+            this.btnOK.Location = new System.Drawing.Point(83, 218);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(82, 37);
@@ -56,7 +58,7 @@ namespace Lab6MDI
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(246, 28);
             this.label1.TabIndex = 1;
-            this.label1.Text = "About Text Editor";
+            this.label1.Text = "About Emergency Infection Tool Kit";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblContent
@@ -64,20 +66,31 @@ namespace Lab6MDI
             this.lblContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblContent.Location = new System.Drawing.Point(1, 27);
+            this.lblContent.Location = new System.Drawing.Point(1, 91);
             this.lblContent.Name = "lblContent";
-            this.lblContent.Size = new System.Drawing.Size(246, 142);
+            this.lblContent.Size = new System.Drawing.Size(246, 125);
             this.lblContent.TabIndex = 2;
             this.lblContent.Text = "Course:         NETD2202\r\nAuthors:        K. Bellman, R. Waring\r\nAssessment: Lab " +
     "6\r\n\r\nThis application was developed for the final assessment of the NETD2202 cou" +
     "rse taught by Clint MacDonald.";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MidiFormParentFinal.Properties.Resources.virus_corona_coronavirus_icon_140526;
+            this.pictureBox1.Location = new System.Drawing.Point(74, 34);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(247, 226);
+            this.ClientSize = new System.Drawing.Size(247, 275);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblContent);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOK);
@@ -86,6 +99,7 @@ namespace Lab6MDI
             this.Name = "frmAbout";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "About";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -95,5 +109,6 @@ namespace Lab6MDI
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblContent;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

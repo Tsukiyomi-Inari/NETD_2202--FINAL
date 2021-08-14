@@ -23,14 +23,22 @@ namespace Lab6MDI
         }
 
         #region GLOBAL VARS
-
+        /// <summary>
+        /// Method for getting and setting current filename
+        /// </summary>
         public string FileNameCurrent { get; set; }
 
         #endregion
 
         #region Singleton Pattern
         // Singleton Pattern
+        /// <summary>
+        /// variable for form instance
+        /// </summary>
         private static frmTextEditor textFileInstance;
+        /// <summary>
+        /// Method for form to get current instance of form (aka null or new)
+        /// </summary>
         public static frmTextEditor Instance
         {
             get
@@ -113,25 +121,39 @@ namespace Lab6MDI
                 this.Text = thisText + " - Text Editor";
             }
         }
-
+        /// <summary>
+        /// Method to set instance of form, upon close, to null
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmClosed(object sender, FormClosedEventArgs e)
         {
             textFileInstance = null;
         }
-
+        /// <summary>
+        /// cuts the currently selected text within text editor
+        /// </summary>
         public void  CutText()
         {
             rtbCanvas.Cut();
         }
+        /// <summary>
+        /// Pastes text from clipboard into text editor
+        /// </summary>
         public void PasteText()
         {
             rtbCanvas.Paste();
         }
+        /// <summary>
+        /// Copies the currently selected text in text editor
+        /// </summary>
         public void CopyText()
         {
             rtbCanvas.Copy();
         }
-
+        /// <summary>
+        /// Selects all text within Text editor
+        /// </summary>
         public void SelectAllText()
         {
             rtbCanvas.SelectAll();

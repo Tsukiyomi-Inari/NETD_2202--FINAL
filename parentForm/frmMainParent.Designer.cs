@@ -234,7 +234,7 @@ namespace Lab6MDI
             // 
             // menuWindowOpenContactTracer
             // 
-            this.menuWindowOpenContactTracer.Image = global::MidiFormParentFinal.Properties.Resources.prevention;
+            this.menuWindowOpenContactTracer.Image = global::MidiFormParentFinal.Properties.Resources.disease_prevention__1_;
             this.menuWindowOpenContactTracer.Name = "menuWindowOpenContactTracer";
             this.menuWindowOpenContactTracer.Size = new System.Drawing.Size(186, 26);
             this.menuWindowOpenContactTracer.Text = "Open Contact Tracer";
@@ -252,7 +252,7 @@ namespace Lab6MDI
             // 
             // menuWindowFelineOverlords
             // 
-            this.menuWindowFelineOverlords.Image = global::MidiFormParentFinal.Properties.Resources.Icons8_Windows_8_Holidays_Black_Cat;
+            
             this.menuWindowFelineOverlords.Name = "menuWindowFelineOverlords";
             this.menuWindowFelineOverlords.Size = new System.Drawing.Size(186, 26);
             this.menuWindowFelineOverlords.Text = "Feline Overlords ";

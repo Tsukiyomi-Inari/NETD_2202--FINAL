@@ -6,7 +6,7 @@
  * @date: August 10th 2021
  * 
  * 
- * @ Last changed on: 
+ * @ Last changed on: August 13th 2021
  */
 
 using System;
@@ -39,6 +39,11 @@ namespace Lab6MDI
         #region "Menu Events"
         // Tabs for the menuStrip1:
         #region "File Tab"
+        /// <summary>
+        /// Opens a new Text Editor and/ or begins a new file
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void menuFileNew_Click(object sender, EventArgs e)
         {
             Document.TextFile.Text = string.Empty;
@@ -50,29 +55,49 @@ namespace Lab6MDI
             frm.Show();
             frm.Focus();
         }
-
+        /// <summary>
+        /// Calls OpenFile() method to open a file in Text Editor
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void menuFileOpen_Click(object sender, EventArgs e)
         {
             OpenFile();
         }
-
+        /// <summary>
+        /// Calls SaveFile() method to save current open file
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void menuFileSave_Click(object sender, EventArgs e)
         {
             SaveFile();
         }
-
+        /// <summary>
+        /// Calls SaveAsFile() method to create a current savedfile from document
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void menuFileSaveAs_Click(object sender, EventArgs e)
         {
             SaveAsFile();
         }
-
+        /// <summary>
+        /// Closes Text editor child form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void menuFileClose_Click(object sender, EventArgs e)
         {
             frmTextEditor frm = new frmTextEditor();
             frm.MdiParent = this;
             frm.Close();
         }
-
+        /// <summary>
+        /// Exits parent application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void menuFileExit_Click(object sender, EventArgs e)
         {
             ExitApplication();
@@ -100,12 +125,17 @@ namespace Lab6MDI
         }
         #endregion
         #region "Window Tab"
+        /// <summary>
+        /// Cascades all open windows inside parent form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void menuWindowCascade_Click(object sender, EventArgs e)
         {
             this.LayoutMdi(System.Windows.Forms.MdiLayout.Cascade);
         }
         /// <summary>
-        /// Tile windows horizontally
+        /// Tile all open windows horizontally
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -114,7 +144,7 @@ namespace Lab6MDI
             this.LayoutMdi(System.Windows.Forms.MdiLayout.TileHorizontal);
         }
         /// <summary>
-        ///   Tile windows vertically
+        ///   Tile all open windows vertically
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -122,7 +152,11 @@ namespace Lab6MDI
         {
             this.LayoutMdi(System.Windows.Forms.MdiLayout.TileVertical);
         }
-
+        /// <summary>
+        /// Opens child form "Contact Tracer" within parent form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void menuWindowOpenContactTracer_Click(object sender, EventArgs e)
         {
             frmContactTracer frm = frmContactTracer.Instance;
@@ -130,7 +164,11 @@ namespace Lab6MDI
             frm.Show();
             frm.Focus();
         }
-
+        /// <summary>
+        /// Opens child form "Average Cases" within parent form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void menuWindowOpenAverageCases_Click(object sender, EventArgs e)
         {
             RegionAverageWeeklyUnitsForm frm = RegionAverageWeeklyUnitsForm.Instance;
@@ -138,6 +176,11 @@ namespace Lab6MDI
             frm.Show();
             frm.Focus();
         }
+        /// <summary>
+        /// Opens child form "Feline Overlords" within parent form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void menuWindowFelineOverlords_Click(object sender, EventArgs e)
         {
             frmFelineOverlords frm = frmFelineOverlords.Instance;
@@ -164,6 +207,9 @@ namespace Lab6MDI
         #endregion
 
         #region "CUSTOM METHODS"
+       /// <summary>
+       /// Opens save file dialog, writes it to file for current instance of Text Editor
+       /// </summary>
         private void SaveAsFile()
         {
             String fileName = string.Empty;
@@ -229,7 +275,9 @@ namespace Lab6MDI
         }
 
         #endregion
-
+        /// <summary>
+        /// Method to close all open child forms
+        /// </summary>
         public void DisposeAll()
         {
             foreach(Form frm in this.MdiChildren)

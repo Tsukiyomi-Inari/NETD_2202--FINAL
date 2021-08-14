@@ -89,16 +89,21 @@ namespace Lab6MDI
             catch { };
         }
 
-
+        /// <summary>
+        /// Event handler for 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnExitClick(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure you want to exit?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                this.Close();
-            }
+
         }
 
-
+        /// <summary>
+        /// Event handler to set all to default by calling the SetDefaults() method
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnResetClick(object sender, EventArgs e)
         {
             SetDefaults();
@@ -107,7 +112,9 @@ namespace Lab6MDI
 
         #endregion
         #region CUSTOM METHODS (FUCNTIONS)
-
+        /// <summary>
+        /// Method to set defaults for form
+        /// </summary>
         private void SetDefaults() 
         {
             txbName.Clear();
@@ -118,7 +125,9 @@ namespace Lab6MDI
             chkFixed.Checked = false;
             
         }
-
+        /// <summary>
+        /// Method to update data grid when called
+        /// </summary>
         private void UpdateDataGrid() 
         {
             DGVSelectionOn = false;
@@ -127,7 +136,9 @@ namespace Lab6MDI
             dgvFelineOverlords.ClearSelection();
             DGVSelectionOn = true;
         }
-
+        /// <summary>
+        /// Returns the selected radio box or error message if null
+        /// </summary>
         private void ReturnSex() 
         {
             if(rbtSexMale.Checked == false)
@@ -143,8 +154,12 @@ namespace Lab6MDI
                 MessageBox.Show("A selection of \"sex\" for feline must be made.", "Error", MessageBoxButtons.OK);
             }
         }
-
-        private void frmClosed(object sender, FormClosedEventArgs e)
+        /// <summary>
+        /// Method to set current instance of form to Null when closed
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnCloseClick(object sender, EventArgs e)
         {
             felineOverlordsInstance = null;
         }

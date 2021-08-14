@@ -1,7 +1,11 @@
 ﻿/* 
- *Author: Katherine Bellman
+ *Author: Katherine Bellman & Russel Waring
  *Date: July 6th 2021
- *Title: Week 8 ICE for NETD2202
+ *Original Title: Week 8 ICE for NETD2202
+ *
+ *Current Title: Cat Class for Feline Overlords form part of 
+ *		Lab6
+ *
  *Sub-Title: Cat Class Definition
  */
 
@@ -54,29 +58,39 @@ namespace Lab6MDI
 			Coloring = felineCoatColouring;
 		}
 
-        #endregion
+	#endregion
 
-        #region OBJECT METHODS
-        /// Leaving here to utilize as template
-	
-		public static string SexToString(bool sexWhich, string sexGet) 
-		{
+	#region OBJECT METHODS
+	/// Leaving here to utilize as template
+
+		/// <summary>
+		/// Method to return correct text depending on selected radio button.
+		/// </summary>
+		/// <returns></returns>	
+	public static string SexToString(bool sexWhich, string sexGet) 
+	{
 					
-			if(sexWhich is true) 
-			{
-				return "Male";
-			}
-            else if(sexWhich is false) 
-			{
-				return "Female";
-			}
-            else { return "null"; }
+		if(sexWhich is true) 
+		{
+			return "Male";
 		}
+		else if(sexWhich is false) 
+		{
+			return "Female";
+		}
+		else 
+		{ 
+		    return "null";
+		}
+	}
 
         #endregion
 
         #region STATIC METHODS
-
+		/// <summary>
+		/// Small selection of starter data for Data Grid View of form
+		/// </summary>
+		/// <returns></returns>
 		public static List<Cat> GenerateFelineOverLords() 
 		{
 			List<Cat> starterFelines = new List<Cat>();
