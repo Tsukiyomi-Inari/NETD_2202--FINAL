@@ -171,7 +171,7 @@ namespace Lab6MDI
         /// <param name="e"></param>
         private void menuWindowOpenAverageCases_Click(object sender, EventArgs e)
         {
-            RegionAverageWeeklyUnitsForm frm = RegionAverageWeeklyUnitsForm.Instance;
+            frmRegionAverageWeeklyUnits frm = frmRegionAverageWeeklyUnits.Instance;
             frm.MdiParent = this;
             frm.Show();
             frm.Focus();

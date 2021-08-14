@@ -1,7 +1,7 @@
 ﻿
 namespace Lab6MDI
 {
-    partial class RegionAverageWeeklyUnitsForm
+    partial class frmRegionAverageWeeklyUnits
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,7 +30,7 @@ namespace Lab6MDI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegionAverageWeeklyUnitsForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegionAverageWeeklyUnits));
             this.labelCasesEntryPrompt = new System.Windows.Forms.Label();
             this.textBoxCasesInput = new System.Windows.Forms.TextBox();
             this.labelRegion1Prompt = new System.Windows.Forms.Label();

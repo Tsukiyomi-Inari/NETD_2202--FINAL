@@ -20,7 +20,7 @@ using System.Windows.Forms;
 
 namespace Lab6MDI
 {
-    public partial class RegionAverageWeeklyUnitsForm : Form
+    public partial class frmRegionAverageWeeklyUnits : Form
     {
         #region "Declarations"
         //Declare class-level variables
@@ -42,7 +42,7 @@ namespace Lab6MDI
         /// <summary>
         /// Initializes the form and the arrays of controls.
         /// </summary>
-        public RegionAverageWeeklyUnitsForm()
+        public frmRegionAverageWeeklyUnits()
         {
             InitializeComponent();
 
@@ -51,14 +51,14 @@ namespace Lab6MDI
         }
         #region "SINGLETON PATTERN"
         //Singleton pattern
-        private static RegionAverageWeeklyUnitsForm regionAverageWeeklyUnitsInstance;
-        public static RegionAverageWeeklyUnitsForm Instance 
+        private static frmRegionAverageWeeklyUnits regionAverageWeeklyUnitsInstance;
+        public static frmRegionAverageWeeklyUnits Instance 
         {
             get 
             {
                 if (regionAverageWeeklyUnitsInstance == null) 
                 {
-                    regionAverageWeeklyUnitsInstance = new RegionAverageWeeklyUnitsForm();
+                    regionAverageWeeklyUnitsInstance = new frmRegionAverageWeeklyUnits();
                 }
                 return regionAverageWeeklyUnitsInstance;
             }
